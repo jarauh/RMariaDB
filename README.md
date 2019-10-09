@@ -14,7 +14,7 @@ RMariaDB is a database interface and MariaDB driver for R. This version is aimed
 ```R
 library(DBI)
 # Connect to my-db as defined in ~/.my.cnf
-con <- dbConnect(RMariaDB::MariaDB(), group = "my-db")
+con <- dbConnect(RMariaDB::MariaDB(), groups = "my-db")
 
 dbListTables(con)
 dbWriteTable(con, "mtcars", mtcars)
